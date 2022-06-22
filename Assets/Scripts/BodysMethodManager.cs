@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class BodysMethodManager
+public class BodysMethodManager :MonoBehaviour
 {
-    static private BodysMethodManager _instance = new BodysMethodManager();
-    private BodysMethodManager() { }
-    public static BodysMethodManager Instance { get { return _instance; } }
+    public static BodysMethodManager Instance;
 
     public Action GravityCalculation;
     public Action BodyTranslate;
 
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,7 @@ public class BodysMethodManager
     // Update is called once per frame
     void Update()
     {
-        
+        GravityCalculation();
+        BodyTranslate();
     }
 }
