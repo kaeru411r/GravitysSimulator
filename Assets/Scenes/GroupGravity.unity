@@ -174,7 +174,7 @@ MonoBehaviour:
     - _body: {fileID: 307169866}
       _isExert: 1
       _isFallUnder: 1
-  - _gravitation: 0.1
+  - _gravitation: 10
     _bodys:
     - _body: {fileID: 2134715317}
       _isExert: 1
