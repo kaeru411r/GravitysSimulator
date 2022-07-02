@@ -18,11 +18,14 @@ public class GravityBlain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
+    {
+    }
+
+    private void FixedUpdate()
     {
         Calculation();
     }
@@ -49,7 +52,7 @@ public class GravityBlain : MonoBehaviour
             {
                 float dis = Vector2.Distance(g1.Body.transform.position, g2.Body.transform.position);
                 float g = go.Gravitation * g2.Body.mass / dis * dis;
-                g1.Body.velocity += (Vector2)(g2.Body.transform.position - g1.Body.transform.position).normalized * g * Time.deltaTime;
+                g1.Body.velocity += (Vector2)(g2.Body.transform.position - g1.Body.transform.position).normalized * g * Time.fixedDeltaTime;
             }
         }
     }
