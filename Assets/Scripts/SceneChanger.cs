@@ -22,5 +22,9 @@ public class SceneChanger : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 }

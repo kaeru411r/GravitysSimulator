@@ -62,3 +62,4 @@ crashlytics-build.properties
 
 [Tt]est*
 [Tt]ests*
+Assets/Scripts/Editor/ToUTF8.cs

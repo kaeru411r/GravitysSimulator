@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Move.unity
     guid: 1d88a89f98dc85a488da788de97fe75e
+  - enabled: 1
+    path: Assets/Scenes/GroupGravity.unity
+    guid: 2a1841e8f3f785b4fa248048377c4d98
   m_configObjects: {}
